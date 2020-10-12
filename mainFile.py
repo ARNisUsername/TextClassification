@@ -22,6 +22,7 @@ X_train_tf = tf_transformer.transform(X_train_counts)
 #Train the model using MultinomialNB and the updated X_train
 clf = MultinomialNB().fit(X_train_tf, y)
 
+#Make function to change a string into one the model can predict
 def changeString(theStr):
     docs = [theStr]
     X_new_counts = count_vect.transform(docs)
