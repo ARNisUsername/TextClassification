@@ -9,7 +9,6 @@ bbc = pd.read_csv('bbc-text.csv')
 X = bbc['text']
 y = bbc['category']
 
-
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 
 #Filtering and tokenizing of stopwords(useless words)
